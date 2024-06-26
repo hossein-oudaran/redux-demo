@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { buyCake } from "../redux/cake/cakeActions";
 
 function CakeContainer() {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.cake);
   const dispatch = useDispatch();
   const [value, setValue] = useState(1);
   return (
